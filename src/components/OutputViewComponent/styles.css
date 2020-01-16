@@ -1,0 +1,21 @@
+.feeds-item {
+    flex: 0 1 calc(48% - 10px);
+    padding: 10px;
+    box-shadow: 0 1px 1px 0 rgba(60,75,100,.14), 0 2px 1px -1px rgba(60,75,100,.12), 0 1px 3px 0 rgba(60,75,100,.2);
+    margin: 10px;
+}
+.feeds-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.feeds-item__date,
+.feeds-item__name {
+    margin-bottom: 10px;
+}
+@media(max-width: 540px) {
+    .feeds-item {
+        flex: 0 1 100%;
+    }
+}
