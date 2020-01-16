@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import OutputViewComponents from "./OutputViewComponent/OutputViewComponents";
+import OutputViewComponents from './OutputViewComponent/OutputViewComponents';
 
 const FeedComponent = (View) => {
     class FeedWrapperComponent extends Component {
@@ -11,19 +11,27 @@ const FeedComponent = (View) => {
                 data: [],
                 limit: 0,
                 feedEnded: false,
-                timerId: null
+                timerId: null,
+                error: null
             }
-
         }
 
         componentDidMount() {
             axios.get(this.props.url)
-                .then((data) => {
-                    this.setState({data: data.data});
-                    this.feedTimer();
-                    console.log(this.state.data);
+                .then(({data}) => {
+                    if(data.length > 0) {
+                        this.setState({data});
+                        this.feedTimer();
+                    } else {
+                        this.setState({
+                            error: 'No feed data received'
+                        })
+                    }
                 }).catch((err) => {
-                console.log(err);
+                    this.setState({
+                        error: 'Wrong url'
+                    });
+                    console.log(err);
             });
         }
 
@@ -52,14 +60,13 @@ const FeedComponent = (View) => {
             this.setState({timerID});
         }
 
-
         render() {
             const feedArray = this.state.data.slice(this.state.limit, this.state.limit + this.props.step);
 
             return (
                 <div>
                     {this.state.data.length ? feedArray.length ? ((<View data={feedArray}/>)) : (<h4>No more feeds</h4>)
-                    : (<h4>Loading</h4>)}
+                    : !this.state.error ? (<h4>Loading</h4>) : (<h4>Error: {this.state.error}</h4>)}
                 </div>
             )
         }
