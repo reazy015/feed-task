@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="452eebab-a081-41d5-b766-cdd7686178e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FeedComponentTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MemoComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PostComponent/PostComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/FeedComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FeedComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FooterComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FooterComponents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OutputViewComponent/OutputViewComponents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/OutputViewComponent/OutputViewComponents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OutputViewComponent/OutputViewComponents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/OutputViewComponent/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PostComponent/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PropComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PropComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +51,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -93,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579075561579</updated>
       <workItem from="1579075564057" duration="24545000" />
-      <workItem from="1579158829490" duration="25192000" />
+      <workItem from="1579158829490" duration="52366000" />
     </task>
     <servers />
   </component>
@@ -101,10 +105,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2381" y="163" key="SettingsEditor" timestamp="1579182494612">
+    <state x="2381" y="163" key="SettingsEditor" timestamp="1579247264962">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579182494612" />
+    <state x="2381" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1579247264962" />
     <state x="2581" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1579158894342">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>

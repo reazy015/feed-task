@@ -34,3 +34,9 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.feeds-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+}

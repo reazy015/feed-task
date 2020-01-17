@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import PropTypes from 'prop-types';
-import OutputViewComponents from './OutputViewComponent/OutputViewComponents';
+import OutputViewComponents from './PostComponent/PostComponent';
 
 const FeedComponent = (View) => {
     class FeedWrapperComponent extends Component {
@@ -22,6 +22,7 @@ const FeedComponent = (View) => {
                     if(data.length > 0) {
                         this.setState({data});
                         this.feedTimer();
+                        console.log(this.state.data)
                     } else {
                         this.setState({
                             error: 'No feed data received'
