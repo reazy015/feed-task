@@ -39,8 +39,9 @@ const FeedComponent = (View) => {
             const timerID = setInterval(() => {
 
                 axios.get(`${this.props.url}/?limit=${!this.state.limit ? this.props.step : this.state.limit}`).then(({data}) => {
-                    this.setState({data: data.slice(this.state.limit)});
+                    this.setState({data: data.slice(0).slice(-this.props.step)});
                     this.setState({limit: this.state.limit + this.props.step});
+                    // console.log(this.state.data);
                 });
             }, this.props.interval * 1000);
 
